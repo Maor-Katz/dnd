@@ -33,15 +33,15 @@ const Item = (props) => {
             props.moveItem(dragIndex, hoverIndex);
             item.index = hoverIndex;
         },
-        hover: (item, monitor) => {
-            const dragIndex = item.index;
-            const hoverIndex = props.index;
-            if (dragIndex === hoverIndex) {// if we hover on the same task, we dont want to change nothing
-                return;
-            }
-            debugger
-            props.moveItem(dragIndex, hoverIndex);
-        },
+//         hover: (item, monitor) => {
+//             const dragIndex = item.index;
+//             const hoverIndex = props.index;
+//             if (dragIndex === hoverIndex) {// if we hover on the same task, we dont want to change nothing
+//                 return;
+//             }
+//             debugger
+//             props.moveItem(dragIndex, hoverIndex);
+//         },
     });
 
     const [collectedProps, drag] = useDrag({
